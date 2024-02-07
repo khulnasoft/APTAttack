@@ -1,0 +1,7 @@
+*.zip
+.vscode
+dist
+out.tmp
+build
+enc-files.7z
+enc-toolset.7z
