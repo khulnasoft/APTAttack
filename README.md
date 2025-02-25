@@ -311,3 +311,33 @@ Flightsim - A utility to generate malicious network traffic and evaluate control
 ## Contact
 
 Follow and contact me on Twitter @cyb3rops
+
+## Docker Container
+
+### Building the Docker Image
+
+To build the Docker image, run the following command in the root of the repository:
+
+```sh
+docker build -t aptattack .
+```
+
+### Running the Docker Container
+
+To run the Docker container, use the following command:
+
+```sh
+docker run --rm -it aptattack
+```
+
+## CI/CD Pipeline
+
+This repository includes a CI/CD pipeline using GitHub Actions. The pipeline is defined in the `.github/workflows/ci.yml` file.
+
+The CI/CD pipeline performs the following tasks:
+
+1. Checks out the code from the repository.
+2. Sets up Docker Buildx for building multi-platform Docker images.
+3. Caches Docker layers to speed up the build process.
+4. Builds the Docker image for the application.
+5. Runs tests inside the Docker container.
