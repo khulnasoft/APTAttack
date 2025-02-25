@@ -13,6 +13,21 @@ the Script Suitable for windows7 or above
 schtasks backdoor
 Default interval of 20 minutes
 
+.PARAMETER Payload
+Specifies the payload to be executed by the scheduled task.
+
+.PARAMETER Method
+Specifies the method to be used for the backdoor. Valid options are "cmd", "nccat", and "msf". Default is "cmd".
+
+.PARAMETER Ip
+Specifies the IP address to be used for the backdoor connection.
+
+.PARAMETER Port
+Specifies the port to be used for the backdoor connection.
+
+.PARAMETER Time
+Specifies the interval time in minutes for the scheduled task. Default is 20 minutes.
+
 .EXAMPLE
 
 
